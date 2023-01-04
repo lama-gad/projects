@@ -6,5 +6,105 @@
 }
 
 body{
-    background: 
+    background:#38283b;
+    color: #fff;
+}
+
+#header{ 
+    width: 100%;
+    height: 100vh;
+    background-image: url(portfolio_pics_edited/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+    align-items: center;
+
+}
+
+nav{
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding : 20px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%
+}
+
+.header-text{
+    border-top: solid #fff;
+    border-bottom: solid #fff;
+    text-align: center;
+    margin-top: 20%;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.header-text h1{
+   margin-top: 40px;
+}
+
+.header-text p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px; 
+}
+#footer{
+    padding: 20px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#footer ul li {
+    text-decoration: none;
+    list-style: none;
+    margin: 10px 30px;
+    display: inline-block;
+    padding: 6px 6px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 40%;
+
+}
+#footer ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+#footer ul li:hover{
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.4;
+    transition: 0.5s;
+
 }
